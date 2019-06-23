@@ -1,18 +1,18 @@
 
-<div *ngIf="selectedCourse" >
-  <h2>  {{selectedCourse.name | uppercase}} Course Details  </h2>
+<div *ngIf="course" >
+  <h2>  {{course.name | uppercase}} Course Details  </h2>
   <div> 
     <span>
       id:
   
     </span>
-    {{selectedCourse.id}}
+    {{course.id}}
      </div>
      <div>
        <label>
          name:
   
-         <input [(ngModel)]="selectedCourse.name" placeholder="name" />
+         <input [(ngModel)]="course.name" placeholder="name" />
   
        </label>
        
@@ -21,6 +21,6 @@
        <span>
          author:
        </span>
-       {{selectedCourse.author}}
+       {{course.author}}
      </div>
     </div>
