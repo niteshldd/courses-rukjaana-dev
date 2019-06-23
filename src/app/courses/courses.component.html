@@ -16,29 +16,3 @@
   </li>
 </ul>
 
-
-<div *ngIf="selectedCourse" >
-<h2>  {{selectedCourse.name | uppercase}} Course Details  </h2>
-<div> 
-  <span>
-    id:
-
-  </span>
-  {{selectedCourse.id}}
-   </div>
-   <div>
-     <label>
-       name:
-
-       <input [(ngModel)]="selectedCourse.name" placeholder="name" />
-
-     </label>
-     
-   </div>
-   <div>
-     <span>
-       author:
-     </span>
-     {{selectedCourse.author}}
-   </div>
-  </div>
