@@ -1,6 +1,10 @@
 <h2> Our Courses </h2>
 <ul class="courses" >
-  <li *ngFor="let course of courses" (click)="onSelect(course)" >
+  <li *ngFor="let course of courses" (click)="onSelect(course)" 
+
+  [class.selected]="course === selectedCourse "
+  
+  >
     <span class="badge" >
       {{course.id}}
     </span>
