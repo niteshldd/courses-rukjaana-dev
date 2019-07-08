@@ -1,10 +1,8 @@
 <h2> Our Courses </h2>
 <ul class="courses" >
-  <li *ngFor="let course of courses" (click)="onSelect(course)" 
-
-  [class.selected]="course === selectedCourse "
-  
+  <li *ngFor="let course of courses"
   >
+  <a routerLink="/detail/{{course.id}}">
     <span class="badge" >
       {{course.id}}
     </span>
@@ -13,7 +11,8 @@
       By:
     </span>
     {{course.author}}
+  </a>
   </li>
 </ul>
 
-<app-course-detail [course]="selectedCourse" ></app-course-detail>
+<!-- <app-course-detail [course]="selectedCourse" ></app-course-detail> -->

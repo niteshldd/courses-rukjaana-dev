@@ -1,4 +1,4 @@
-
+<button (click)="goBack()" >go back</button>
 <div *ngIf="course" >
   <h2>  {{course.name | uppercase}} Course Details  </h2>
   <div> 
@@ -22,5 +22,17 @@
          author:
        </span>
        {{course.author}}
+       <div >
+       <ul>
+         <li *ngFor= "let courselist of course.courselist; let i = index " >
+            {{courselist.name}}
+            {{courselist.id}}
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src={{courselist.link}} allowfullscreen></iframe>
+            </div>
+            
+         </li>
+       </ul>
+      </div>
      </div>
     </div>

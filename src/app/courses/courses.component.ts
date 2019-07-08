@@ -12,12 +12,12 @@ export class CoursesComponent implements OnInit {
 
   courses: Course[];
 
-  selectedCourse: Course;
 
   constructor( private courseService: CourseService ) { }
 
   ngOnInit() {
     this.getCourse();
+    
   }
 
 
@@ -26,11 +26,8 @@ export class CoursesComponent implements OnInit {
     .subscribe(courses => this.courses = courses); 
   }
 
-
   
-  onSelect(course: Course): void{
-    this.selectedCourse = course;
-  }
+  
 
 
 }

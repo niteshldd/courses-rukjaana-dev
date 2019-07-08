@@ -13,6 +13,16 @@ export class CourseService {
   getCourses(): Observable<Course[]> {
     this.messageService.add('MessageService: fectched courses');
     return of (COURSES);
+    
+  }
+
+  
+
+  getCourse(id: number): Observable<Course>{
+
+    this.messageService.add(`HeroService: fetched course id=${id}`);
+    return of(COURSES.find(course => course.id === id));
+
   }
 
  

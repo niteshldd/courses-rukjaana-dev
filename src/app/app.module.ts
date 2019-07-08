@@ -7,6 +7,7 @@ import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { LecturesDetailsComponent } from './lectures-details/lectures-details.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
     CoursesComponent,
     CourseDetailComponent,
     LecturesDetailsComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
